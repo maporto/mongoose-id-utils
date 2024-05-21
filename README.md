@@ -12,7 +12,8 @@
   <a href="https://www.npmjs.org/package/mongoose-id-utils"><img src="https://badgen.net/npm/license/mongoose-id-utils" alt="license"/></a>
   <a href="https://www.npmjs.org/package/mongoose-id-utils"><img src="https://badgen.net/npm/dt/mongoose-id-utils" alt="downloads"/></a>
   <a href="https://github.com/maporto/mongoose-id-utils/actions?workflow=CI"><img src="https://github.com/maporto/mongoose-id-utils/workflows/CI/badge.svg" alt="build"/></a>
-  <a href="https://codecov.io/gh/maporto/mongoose-id-utils"><img src="https://badgen.net/codecov/c/github/maporto/mongoose-id-utils" alt="codecov"/></a>
+  
+  <a href="https://codecov.io/gh/maporto/mongoose-id-utils"><img src="https://badgen.net/codecov/c/github/maporto/mongoose-id-utils?token=DOS32MRBW3" alt="codecov"/></a>
   <a href="https://snyk.io/test/github/maporto/mongoose-id-utils"><img src="https://snyk.io/test/github/maporto/mongoose-id-utils/badge.svg" alt="Known Vulnerabilities"/></a>
   <a href="./SECURITY.md"><img src="https://img.shields.io/badge/Security-Responsible%20Disclosure-yellow.svg" alt="Responsible Disclosure Policy" /></a>
 </p>
