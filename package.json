@@ -46,7 +46,7 @@
     "url": "https://github.com/marcosporto/mongoose-id-utils.git"
   },
   "dependencies": {
-    "mongoose": "^8.4.0"
+    "mongoose": ">=5.13.21"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
