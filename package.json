@@ -7,7 +7,8 @@
     "cli": "bin/cli.js"
   },
   "exports": {
-    ".": "./src/main.js"
+    "import": "./src/main.js",
+    "require": "./src/main.cjs"
   },
   "engines": {
     "node": ">=16.0.0"
@@ -24,7 +25,7 @@
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
     "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watch",
     "coverage:view": "open-cli coverage/lcov-report/index.html",
-    "semantic-release": "npx semantic-release",
+    "semantic-release": "npx rollup ./src/main.js --file ./src/main.cjs --format cjs && npx semantic-release",
     "prepare": "husky install && chmod 755 .husky/*",
     "lint:lockfile": "lockfile-lint --path package-lock.json --validate-https --allowed-hosts npm yarn"
   },
