@@ -36,6 +36,10 @@ jobs:
   release:
     name: do semantic release
     runs-on: 'ubuntu-latest'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     needs: build
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
@@ -48,5 +52,5 @@ jobs:
       - name: release
         run: npx semantic-release
         env:
-          GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
