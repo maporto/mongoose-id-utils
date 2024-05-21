@@ -32,6 +32,27 @@ jobs:
         run: npm ci --ignore-engines
       - name: run tests
         run: npm run test
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4.0.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+
+  coverage:
+    name: Coverage
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      - name: install dependencies
+        run: npm ci
+      - name: run tests
+        run: npm run test
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4.0.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
 
   release:
     name: do semantic release

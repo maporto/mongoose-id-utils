@@ -30,13 +30,61 @@ npm install --save mongoose-id-utils
 # Usage
 
 ```js
-// @TODO
-const {} = require('mongoose-id-utils')
+const { isObjectId, extractIdString, extractIdObjectId } = require('mongoose-id-utils')
 ```
 
 # Example
 
-<!-- TODO -->
+# API
+
+## isObjectId
+```js
+const { isObjectId } = require('mongoose-id-utils')
+
+const id = '5f5b3b3b4b3b3b3b3b3b3b3b'
+
+if (isObjectId(id)) {
+  console.log('Is a valid ObjectId')
+} else {
+  console.log('Is not a valid ObjectId')
+}
+```
+
+## extractIdString
+```js
+const { extractIdString } = require('mongoose-id-utils')
+
+const idString = '5f5b3b3b4b3b3b3b3b3b3b3b'
+const idInDocument = {
+  _id: '5f5b3b3b4b3b3b3b3b3b3b3b'
+}
+
+console.log(extractIdString(id))
+
+// Output: 5f5b3b3b4b3b3b3b3b3b3b
+
+console.log(extractIdString(idInDocument))
+
+// Output: 5f5b3b3b4b3b3b3b3b3b3b
+```
+
+## extractIdObjectId
+```js
+const { extractIdObjectId } = require('mongoose-id-utils')
+
+const idString = '5f5b3b3b4b3b3b3b3b3b3b'
+const idInDocument = {
+  _id: '5f5b3b3b4b3b3b3b3b3b3b'
+}
+
+console.log(extractIdObjectId(id))
+
+// Output: ObjectId('5f5b3b3b4b3b3b3b3b3b3b')
+
+console.log(extractIdObjectId(idInDocument))
+
+// Output: ObjectId('5f5b3b3b4b3b3b3b3b3b3b')
+```
 
 # Contributing
 
