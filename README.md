@@ -41,49 +41,47 @@ const { isObjectId, extractIdString, extractIdObjectId } = require('mongoose-id-
 ```js
 const { isObjectId } = require('mongoose-id-utils')
 
-const id = '5f5b3b3b4b3b3b3b3b3b3b3b'
+const id = '5e4e2f3b8a4f4c001e0e4c2d'
 
-if (isObjectId(id)) {
-  console.log('Is a valid ObjectId')
-} else {
-  console.log('Is not a valid ObjectId')
-}
+console.log(isObjectId(id))
+
+// Output: true
 ```
 
 ## extractIdString
 ```js
 const { extractIdString } = require('mongoose-id-utils')
 
-const idString = '5f5b3b3b4b3b3b3b3b3b3b3b'
+const idString = '5e4e2f3b8a4f4c001e0e4c2d'
 const idInDocument = {
-  _id: '5f5b3b3b4b3b3b3b3b3b3b3b'
+  _id: '5e4e2f3b8a4f4c001e0e4c2d'
 }
 
 console.log(extractIdString(id))
 
-// Output: 5f5b3b3b4b3b3b3b3b3b3b
+// Output: 5e4e2f3b8a4f4c001e0e4c2d
 
 console.log(extractIdString(idInDocument))
 
-// Output: 5f5b3b3b4b3b3b3b3b3b3b
+// Output: 5e4e2f3b8a4f4c001e0e4c2d
 ```
 
 ## extractIdObjectId
 ```js
 const { extractIdObjectId } = require('mongoose-id-utils')
 
-const idString = '5f5b3b3b4b3b3b3b3b3b3b'
+const idString = '5e4e2f3b8a4f4c001e0e4c2d'
 const idInDocument = {
-  _id: '5f5b3b3b4b3b3b3b3b3b3b'
+  _id: '5e4e2f3b8a4f4c001e0e4c2d'
 }
 
 console.log(extractIdObjectId(id))
 
-// Output: ObjectId('5f5b3b3b4b3b3b3b3b3b3b')
+// Output: ObjectId('5e4e2f3b8a4f4c001e0e4c2d')
 
 console.log(extractIdObjectId(idInDocument))
 
-// Output: ObjectId('5f5b3b3b4b3b3b3b3b3b3b')
+// Output: ObjectId('5e4e2f3b8a4f4c001e0e4c2d')
 ```
 
 # Contributing
