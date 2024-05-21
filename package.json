@@ -31,19 +31,19 @@
   "author": {
     "name": "Marcos Porto",
     "email": "devmarcosporto@gmail.com",
-    "url": "https://github.com/marcosporto"
+    "url": "https://github.com/maporto"
   },
   "license": "Apache-2.0",
   "keywords": [
     "mongoose"
   ],
-  "homepage": "https://github.com/marcosporto/mongoose-id-utils",
+  "homepage": "https://github.com/maporto/mongoose-id-utils",
   "bugs": {
-    "url": "https://github.com/marcosporto/mongoose-id-utils/issues"
+    "url": "https://github.com/maporto/mongoose-id-utils/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/marcosporto/mongoose-id-utils.git"
+    "url": "https://github.com/maporto/mongoose-id-utils.git"
   },
   "dependencies": {
     "mongoose": ">=5.13.21"
