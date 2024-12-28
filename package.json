@@ -47,7 +47,7 @@
     "url": "https://github.com/maporto/mongoose-id-utils.git"
   },
   "dependencies": {
-    "mongoose": "^8.8.3"
+    "mongoose": "^8.8.4"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
